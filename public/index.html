@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="bg-pink-200">
+    <header class="bg-white">
+        <section class="p-2 text-black font-bold">
+            <h1>Chizus</h1>
+        </section>
+    </header>
+
+    <main class="m-52">
+        <section class="m-10">
+            <form action="">
+                <label class="relative block">
+                    <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                        <svg class="h-5 w-5 fill-slate-300" viewBox="0 0 20 20"><!-- ... --></svg>
+                    </span>
+                    <input
+                        class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border  border-slate-300 rounded-xl py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
+                        placeholder="Input url for vulnerability scanning..." type="text" name="search" />
+                    <span class="p-4 font-semibold">Input multiple urls for scanning by adding a space or comma</span>
+                </label>
+                <div class="flex justify-center mt-4">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold rounded-xl py-2 px-8"
+                        type="submit">Scan</button>
+                </div>
+
+            </form>
+        </section>
+
+        <section>
+            <span class="font-bold">Scan History</span>
+            <table class="w-full table-fixed">
+                <thead>
+                  <tr>
+                    <th>URL</th>
+                    <th>RISK</th>
+                    <th>REVIEW</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr class="bg-zinc-400 font-bold border-b-2 border-white">
+                        <td class="p-4">www.thenetnaija.com</td>
+                        <td class="p-4 text-white bg-blue-500 text-center">Medium Risk</td>
+                        <td class="p-4 flex justify-center">
+                            <button class="py-2 w-40 bg-blue-500  rounded-xl text-center text-white" type="submit">
+                                Review
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="bg-zinc-300 font-bold border-b-2 border-white">
+                        <td class="p-4">www.netflix.com</td>
+                        <td class="p-4 text-white bg-red-500 text-center">HIGH Risk</td>
+                        <td class="p-4 flex justify-center">
+                            <button class="py-2 w-40 bg-blue-500  rounded-xl text-center text-white" type="submit">
+                                Review
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="bg-zinc-400 font-bold border-b-2 border-white">
+                        <td class="p-4">www.waploaded.com</td>
+                        <td class="p-4 text-white bg-blue-500 text-center">LOW Risk</td>
+                        <td class="p-4 flex justify-center">
+                            <button class="py-2 w-40 bg-blue-500  rounded-xl text-center text-white" type="submit">
+                                Review
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>
